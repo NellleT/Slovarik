@@ -54,7 +54,8 @@ const POS_ALIASES: Record<string, string> = {
 };
 
 export function parsePage(text: string): ParsedPage {
-  const german = germanSection(text);
+  // Wiktionary sends \n, but pages saved on Windows come back with \r\n.
+  const german = germanSection(text.replace(/\r\n?/g, '\n'));
   if (!german) return { entries: [], baseForms: [] };
 
   const entries: Entry[] = [];

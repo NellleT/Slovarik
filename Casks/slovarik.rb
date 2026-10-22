@@ -1,6 +1,6 @@
 cask "slovarik" do
-  version "0.1.0"
-  sha256 "466832cf0c75f1ec92fd8b801b3c0ffcb11ffdb33a864e00ad52d7134ea5166e"
+  version "0.2.0"
+  sha256 "dcc4267fe19ba88b6c9867801df6c9938fd9917df01f11a1cef0cf43c0eff63c"
 
   url "https://github.com/NellleT/Slovarik/releases/download/v#{version}/Slovarik_#{version}_universal.dmg"
   name "Slovarik"

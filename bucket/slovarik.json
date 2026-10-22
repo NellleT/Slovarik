@@ -1,13 +1,13 @@
 {
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Flashcards for German vocabulary with automatic explanations and translations",
   "homepage": "https://github.com/NellleT/Slovarik",
   "license": "MIT",
   "notes": "Uses the Microsoft Edge WebView2 runtime, which ships with Windows 10 and 11.",
   "architecture": {
     "64bit": {
-      "url": "https://github.com/NellleT/Slovarik/releases/download/v0.1.0/Slovarik_0.1.0_x64_portable.zip",
-      "hash": "388e871608e53843644c2eff27f652d37715302996c00903b3a2e5141ecf90d7"
+      "url": "https://github.com/NellleT/Slovarik/releases/download/v0.2.0/Slovarik_0.2.0_x64_portable.zip",
+      "hash": "c5c26ff58a11dcf9a6747991fe7e23b6d6e12f6a28638c23d693d02358928811"
     }
   },
   "shortcuts": [

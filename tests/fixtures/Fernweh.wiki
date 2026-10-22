@@ -1,0 +1,82 @@
+== Fernweh ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Substantiv|Deutsch}}, {{n}} ===
+
+{{Deutsch Substantiv Übersicht
+|Genus=n
+|Nominativ Singular=Fernweh
+|Nominativ Plural=—
+|Genitiv Singular=Fernwehs
+|Genitiv Singular*=Fernwehes
+|Genitiv Plural=—
+|Dativ Singular=Fernweh
+|Dativ Plural=—
+|Akkusativ Singular=Fernweh
+|Akkusativ Plural=—
+|Bild=Cala Fornels.JPG|mini|1|der Gedanke ans Meer kann das ''Fernweh'' wecken
+}}
+
+{{Worttrennung}}
+:Fern·weh, {{kPl.}}
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ˈfɛʁnˌveː}}
+:{{Hörbeispiele}} {{Audio|De-Fernweh.ogg}}, {{Audio|De-at-Fernweh.ogg|spr=at}}
+
+{{Bedeutungen}}
+:[1] [[Sehnsucht]] nach der [[Ferne]], nach [[fernen]] [[Ländern]]
+
+{{Herkunft}}
+:[[Determinativkompositum]] ([[Zusammensetzung]]) aus dem [[Adjektiv]] ''[[fern]]'' und dem [[Substantiv]] ''[[Weh]]''
+
+{{Synonyme}}
+:[1] [[Reisefieber]], [[Reiselust]], [[Wandertrieb]], [[Wanderlust]]
+
+{{Gegenwörter}}
+:[1] [[Heimweh]]
+
+{{Oberbegriffe}}
+:[1] [[Sehnsucht]]
+
+{{Beispiele}}
+:[1] Das beste Mittel gegen ''Fernweh'' ist eine Urlaubsreise.
+:[1] »Heimweh? … Nein, wahrlich, ich glaube, ich habe gerade das Gegenteil, ich habe »''Fernweh''«.<ref>{{DiB-Projekt Gutenberg-DE | Online=https://www.projekt-gutenberg.org/brackel/tochter/chap03.html | Autor=Ferdinande Freiin von Brackel | Titel=Die Tochter des Kunstreiters | Kapitel=Kap. 3 }}</ref>
+:[1] 1923 heuerte Walter Spies, vom ''Fernweh'' getrieben, als Matrose an und ging in Batavia, dem heutigen Jakarta an Land, wo er schon bald das Hoforchester des Sultans leitete.<ref>{{Per-Deutschlandradio | Online=https://www.deutschlandfunk.de/75-todestag-von-walter-spies-kuenstler-im-paradies.871.de.html?dram:article_id=376718 | Autor=Regina Kusch | Titel=75. Todestag von Walter Spies - Künstler im Paradies | TitelErg= | Tag=19 | Monat=01 | Jahr=2017 | Zugriff=2018-06-28 | Kommentar=Deutschlandfunk / Köln, Sendereihe: Kalenderblatt }}</ref>
+:[1] ''Fernweh'' ist am wichtigsten für Branchen Tourismus- und Luftfahrt.
+:[1] Immer beliebter werden sogenannte „Ethno-Supermärkte“, besonders in Wien. Hier kaufen die einen aus Heimweh, die anderen aus ''Fernweh'' – und immer mehr, um einfach exotischer zu essen.<ref>{{Per-Presse (Onlineausgabe) | Online=http://diepresse.com/home/politik/integration/393933/index.do?from=suche.intern.portal | Autor=Nasila Berangy | Titel=Integration: Ein Stück Heimat im Supermarktregal | Tag=25 | Monat=6 | Jahr=2008 | Zugriff=2011-11-06 }}</ref>
+:[1] „Travel bug“ oder „itchy feet“ – für das ''Fernweh'' gibt es in der englischen Sprache so manch wunderliche Übersetzung. Am interessantesten und wohl treffendsten ist jedoch die Variante „wanderlust“.<ref>[http://sos-fernweh.com/fernweh-bedeutet-wanderlust/ Wandern hilft gegen Fernweh"]</ref>
+:[1] Auch heute reisen viele Menschen gern mit dem Schiff; das belegt der anhaltende Boom von Kreuzfahrt-Reisen. ''Fernweh'' und die Sehnsucht nach fremden Ländern sind ein Grund dafür.<ref>{{Per-Deutschlandradio | Online=https://www.deutschlandfunkkultur.de/schiffe-technik-und-traum.2193.de.html?dram:article_id=394915 | Autor=Olga Hochweis | Titel=Schiffe - Technik und Traum | TitelErg= | Tag=03 | Monat=09 | Jahr=2017 | Zugriff=2018-06-28 | Kommentar=Deutschlandfunk / Köln, Sendereihe: Sonntagmorgen }}</ref>
+
+{{Redewendungen}}
+:dem ''Fernweh'' [[nachgeben]]
+:vom ''Fernweh'' [[packen|gepackt]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=Sehnsucht nach der Ferne, nach fernen Ländern|Ü-Liste=
+*{{da}}: {{Ü|da|udlængsel}} {{u}}
+*{{en}}: {{Ü|en|wanderlust}}, {{Ü|en|itchy feet}}
+*{{fi}}: {{Ü|fi|kaukokaipuu}}
+*{{fr}}: {{Ü|fr|nostalgie}} {{f}}, {{Ü|fr|besoin de courir le monde}} {{m}}
+*{{el}}: {{Üt|el|επιθυμία|epithymía gia taxídia|επιθυμία για ταξίδια}} {{f}}
+*{{is}}: {{Ü|is|útþrá}}, {{Ü|is|ferðaþrá}}
+*{{it}}: {{Ü|it|nostalgia}} {{f}}, {{Ü|it|nostalgia di paesi lontani}} {{f}}
+*{{nl}}: {{Ü|nl|verlangen naar de verte}}
+*{{no}}: {{Ü|no|utferdstrang}} {{m}}, {{Ü|no|utlengsel}} {{m}}
+*{{pl}}: {{Ü|pl|tęsknota za dalekim światem}} {{f}}
+*{{pt}}: {{Ü|pt|saudades de longes terras}} {{f}} / Plural
+*{{ro}}: {{Ü|ro|dor de ducă}} {{n}}
+*{{ru}}: {{Üt|ru|охота к перемене мест}} {{f}}, {{Üt|ru|тяга к дальним странствиям}} {{f}}
+*{{sv}}: {{Ü|sv|reslust}}
+*{{sk}}: {{Ü|sk|túžba po diaľke}}
+*{{es}}: {{Ü|es|ansia por viajar}}, {{Ü|es|añoranza de países lejanos}} {{f}}, {{Ü|es|nostalgia de lo lejano}} {{f}}, {{Ü|es|nostalgia de países lejanos}} {{f}}
+*{{cs}}: {{Ü|cs|touha po dálkách}}
+*{{hu}}: {{Ü|hu|elvágyódás}}
+}}
+
+{{Referenzen}}
+:[1] {{Wikipedia|Fernweh}}
+:[1] {{Ref-Duden|Fernweh}}
+:[1] {{Ref-DWDS|Fernweh}}
+:[1] {{Ref-UniLeipzig|Fernweh}}
+:[1] Deutsche Welle, Wort der Woche: {{Per-Deutsche Welle | Online=https://p.dw.com/p/1HIkL | Autor=Felix Forberg | Titel=Das Fernweh | TitelErg= | Tag=15 | Monat=07 | Jahr=2016 | Zugriff=2018-06-28 | Kommentar=Text und [https://www.dw.com/overlay/media/de/das-fernweh/18901833/18899977 Audio], Dauer: 01:28 mm:ss }}
+
+{{Quellen}}

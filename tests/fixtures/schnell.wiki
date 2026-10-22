@@ -1,0 +1,239 @@
+== schnell ({{Sprache|Deutsch}}) ==
+=== {{Wortart|Adjektiv|Deutsch}} ===
+
+{{Deutsch Adjektiv Übersicht
+|Positiv=schnell
+|Komparativ=schneller
+|Superlativ=schnellsten
+|Bild 1=Fast train (4712207733).jpg|mini|1|ein ''schneller'' [[Zug]]
+|Bild 2=VLI VL750 MStick Angle (4994860126).jpg|mini|2|''schnelle'' [[Datenübertragung]] mit einem [[USB-Stick]]
+|Bild 3=Windflower-05237-nevit.JPG|mini|3|sich ''schnell'' [[drehen]]
+}}
+
+{{Worttrennung}}
+:schnell, {{Komp.}} schnel·ler, {{Sup.}} am schnells·ten
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʃnɛl}}
+:{{Hörbeispiele}} {{Audio|De-schnell.ogg}}, {{Audio|De-schnell2.ogg}}, {{Audio|De-at-schnell.ogg|spr=at}}
+:{{Reime}} {{Reim|ɛl|Deutsch}}
+
+{{Bedeutungen}}
+:[1] eine hohe [[Geschwindigkeit]] habend, das Gegenteil von [[langsam]]
+:[2] nur vergleichsweise wenig [[Zeit]] beanspruchend, das Gegenteil von [[langwierig]]
+:[3] ''[[adverbiell]]e Verwendung:'' wenig Zeit benötigend
+
+{{Herkunft}}
+:[[althochdeutsch]] ''{{Ü|goh|snël}}'', ''{{Ü|goh|snëlles}}'' (in [[gotisch]] nicht vorhanden), vgl: ''[[alts.]]'' [[mittelniederdeutsch]] [[nordniederdeutsch]] ''[[mndl.]]'' ''[[nndl.]]'' ''[[snel]], [[snell]]'', [[nordenglisch]]er Dialekt ''{{Ü|en|snell}}'', [[altnordisch]] ''{{Ü|non|snjallr}}'' (jetzt [[schwedisch]] ''{{Ü|sv|snäll}}''). Die Wurzel hat einmal die romanischen Sprachen beeinflusst (Ursprung unklar): [[italienisch]] ''{{Ü|it|snello}}'', [[prov.]] ''{{Ü|it|isnel}}'', ''{{Ü|it|irnel}}'', [[altfranzösisch]] ''{{Ü|fro|isnel}}'', [[normannisch]] ''{{Ü|nrf|inele}}'' {{QS Herkunft|unbelegt}}
+
+{{Sinnverwandte Wörter}}
+:[1, 2] [[fix]], [[flink]], [[flott]], [[geschwind]], [[hurtig]], [[rapide]], [[rasch]], [[schleunig]], [[unverzüglich]], [[zügig]]
+:[3] [[eben]]
+
+{{Gegenwörter}}
+:[1] [[langsam]]
+:[2] [[langwierig]]
+
+{{Unterbegriffe}}
+:[1–3] [[blitzschnell]], [[rasend]], [[rasant]], [[sekundenschnell]], [[überschnell]], [[ultraschnell]], [[vorschnell]]
+:[3] [[glasfaserschnell]], [[reaktionsschnell]]
+
+{{Beispiele}}
+:[1] Heute nehme ich den ''schnelleren'' Zug.
+:[1] „Beim Bodyflying werden Sie durch einen 180 km/h ''schnellen'' Luftstrom aufwärts getrieben.“<ref>{{Internetquelle|url=https://www.fun4you.de/geschenkideen/bodyflying |titel= Bodyflying|zugriff= 2020-04-04}}</ref>
+:[1] Lass uns das ''schnellste'' Motorboot von allen hier mieten, wenn schon, denn schon, sag ich mal!
+:[1] Sie wird mir viel zu ''schnell,'' gib ihr durch, dass sie langsamer werden soll!
+:[1] Sie ist wirklich ''schnell,'' kein anderer schafft soviel an einem Tag.
+:[2] Um überzeugen zu können, brauchen wir jetzt ''schnelle'' Erfolge!
+:[2] Wir könnten uns zu einem ''schnellen'' Mittag in der Stadt treffen.
+:[2] Hallo Süßer, wie wäre es mit einer ''schnellen'' Nummer?
+:[1] „UV-Strahlung lässt die Haut ''schneller'' altern und, noch wichtiger, erhöht maßgeblich das Hautkrebsrisiko.“<ref>{{Per-Öko-Test | Archiv-URL=https://www.oekotest.de/kosmetik-wellness/Sonnencremes-im-Test-Es-geht-ohne-den-verbotenen-Weichmacher-DnHexP_15469_1.html | Autor=Sarah Becker, Marieke Mariani, Lena Wenzel | Titel=Sonnencremes im Test: Es geht ohne den verbotenen Weichmacher DnHexP | TitelErg= | Nummer= | Tag=12 | Monat=06 | Jahr=2025 | Seiten= | Zugriff=2025-06-15 | Kommentar= }}</ref>
+:[3] Ich will nur noch ''schnell'' einen Happen essen.
+:[3] Kannst du mir ''schnell'' mal helfen?
+:[3] „Obergärige Hefen sind zwar empfindlicher als untergärige, aber mit ihnen verläuft die Gärung deutlich ''schneller'' und ohne moderne Kühltechnik.“<ref>{{Ref-wissen.de|Bildwörterbuch|lebensmittel-und-biotechnologie-mehr-als-kaese-und-bier|Lebensmittel- und Biotechnologie: Mehr als Käse und Bier}}</ref>
+:[3] Die Arbeit ging ''schneller'' voran als erwartet.
+:[3] „Beim Kunstfliegen geht es nicht darum, ''schnell'' an ein Ziel zu kommen, sondern Flugmanöver so spektakulär wie möglich auszuführen.“<ref>{{Internetquelle|url= https://www.flugerlebnisse.com/kunstflug|titel= Flugerlebnisse|zugriff= 2020-03-10}}</ref>
+
+{{Redewendungen}}
+:''[[schnell wie der Blitz]]'' -
+:''[[schneller als der Schall]]'' -
+:''[[schneller als die Polizei erlaubt]]'' -
+
+{{Charakteristische Wortkombinationen}}
+:[3] [[eben]] ''schnell'', [[nur]] [[mal]] ''schnell''
+
+{{Wortbildungen}}
+:''[[Substantiv]]e:'' [[Schnellaufzug]], [[Schnellbahn]], [[Schnellbinder]], [[Schnellboot]], [[Schnellbus]], [[Schnelldurchlauf]], [[Schnelle]], [[Schnellfeuer]], [[Schnellhefter]], [[Schnelligkeit]], [[Schnellimbiss]], [[Schnellkochtopf]], [[Schnellkurs]], [[Schnelllader]], [[Schnellreparatur]], [[Schnellrestaurant]], [[Schnellschach]], [[Schnellschrift]], [[Schnellstraße]], [[Schnellstudie]], [[Schnelltest]], [[Schnellwaage]], [[Schnellzug]]
+:''[[Verb]]en:'' [[schnellen]]
+
+==== {{Übersetzungen}} ====
+{{Ü-Tabelle|1|G=eine hohe Geschwindigkeit habend, das Gegenteil von langsam|Ü-Liste=
+*{{ar}}: {{Üt|ar|سريع|sarīʿ}}
+*{{bs}}: {{Üt|bs|брз|brz}}, {{Üt|bs|хитар|hitar}}
+*{{bg}}: {{Üt|bg|бърз}}
+*{{da}}: {{Ü|da|hurtig}}
+*{{en}}: {{Ü|en|fast}}, {{Ü|en|quick}}, {{Ü|en|rapid}}, {{Ü|en|swift}}
+*{{eo}}: {{Ü|eo|rapida}}
+*{{et}}: {{Ü|et|kiire}}
+*{{fo}}: {{Ü|fo|kvikur}}, {{Ü|fo|skjótur}}
+*{{fi}}: {{Ü|fi|nopea}}
+*{{fr}}: {{Ü|fr|rapide}}, {{Ü|fr|vite}}
+*{{gl}}: {{Ü|gl|rápido}}
+*{{ka}}: {{Üt|ka|სწრაფი|stsraphi}}, {{Üt|ka|ჩქარი|chkari}}
+*{{el}}: {{Üt|el|γρήγορος|grígoros}}
+*{{haw}}: {{Ü|haw|wiki}}
+*{{io}}: {{Ü|io|rapida}}
+*{{id}}: {{Ü|id|cepat}}
+*{{ia}}: {{Ü|ia|rapide}}
+*{{is}}: {{Ü|is|hraður}}, {{Ü|is|skjótur}}, {{Ü|is|kvikur}}
+*{{it}}: {{Ü|it|rapido}}, {{Ü|it|svelto}}, {{Ü|it|veloce}}
+*{{ja}}: {{Üt|ja|速い|はやい, hayai}}, {{Üt|ja|さっさと|sassato}}
+*{{tlh}}: {{Ü|tlh|nom}}
+*{{hr}}: {{Ü|hr|brz}}, {{Ü|hr|hitar}}
+*{{ku}}:
+**{{kmr}}: {{Ü|kmr|zû}}, {{Ü|kmr|bilez}}
+*{{la}}: {{Ü|la|celer}}, {{Ü|la|velox}}
+*{{lv}}: {{Ü|lv|ātri}}, {{Ü|lv|žigli}}
+*{{lt}}: {{Ü|lt|greitas}}
+*{{lb}}: {{Ü|lb|séier}}, {{Ü|lb|schnell}}
+*{{mk}}: {{Üt|mk|брз|brz}}, {{Üt|mk|итар|itar}}
+*{{nds}}: {{Ü|nds|snell}}, {{Ü|nds|gau}}, {{Ü|nds|fix}}, {{Ü|nds|flott}}
+*{{nl}}: {{Ü|nl|snel}}
+*{{se}}: {{Ü|se|háhppil}}
+*{{no}}: {{Ü|no|fort}}, {{Ü|no|kjapp}}, {{Ü|no|rask}}
+*{{pap}}: {{Ü|pap|rápido}}
+*{{pl}}: {{Ü|pl|szybki}}
+*{{pt}}: {{Ü|pt|rápido}}
+*{{ro}}: {{Ü|ro|rapid}}
+*{{ru}}: {{Üt|ru|быстрый}}, {{Üt|ru|скорый}}
+*{{sa}}: {{Üt|sa|भृश|bhrza}}
+*{{sv}}: {{Ü|sv|flink}}, {{Ü|sv|fort}}, {{Ü|sv|hastig}}, {{Ü|sv|kvick}}, {{Ü|sv|rask}}, {{Ü|sv|snabb}}
+*{{sr}}: {{Üt|sr|брз|brz}}, {{Üt|sr|хитар|hitar}}
+*{{sh}}: {{Üt|sh|брз|brz}}, {{Üt|sh|хитар|hitar}}
+*{{sk}}: {{Ü|sk|rýchly}}
+*{{sl}}: {{Ü|sl|hiter}}
+*{{wen}}:
+**{{dsb}}: {{Ü|dsb|malsny}}
+**{{hsb}}: {{Ü|hsb|chětry}}
+*{{es}}: {{Ü|es|rápido}}
+*{{th}}: {{Üt|th|เร็ว|reo}}, {{Üt|th|ไว|wai}}
+*{{cs}}: {{Ü|cs|rychlý}}
+*{{tr}}: {{Ü|tr|hızlı}}, {{Ü|tr|süratli}}
+*{{uk}}: {{Üt|uk|швидкий}}
+*{{hu}}: {{Ü|hu|gyorsan}}
+*{{ur}}: {{Üt|ur|تیز|}}
+*{{wa}}: {{Ü|wa|rade}}, {{Ü|wa|vite}}, {{Ü?|wa|abeye}}
+*{{be}}: {{Üt|be|хуткі}}
+|Dialekttabelle=
+*{{bar}}: [?] gāch, trawig/drawig
+*[[Berlinerisch]]: [?] dalli
+*[[Elsässisch]]: [?] schnëll
+*[[Fränkisch]]: [?] fendzi
+*{{swg}}: [?] schleunig; dapferle
+*{{gsw}}: [?] gschwind; gleitig; hurtig
+*[[Vorarlbergerisch]]: [?] gnoot
+*[[Walserisch]]: [?] waile
+}}
+
+{{Ü-Tabelle|2|G=nur vergleichsweise wenig Zeit beanspruchend, das Gegenteil von langwierig|Ü-Liste=
+*{{bs}}: {{Üt|bs|брз|brz}}, {{Üt|bs|хитар|hitar}}
+*{{fr}}: {{Ü|fr|vite}}
+*{{ka}}: {{Üt|ka|სწრაფი|stsraphi}}, {{Üt|ka|ჩქარი|chkari}}
+*{{haw}}: {{Ü|haw|wiki}}
+*{{id}}: {{Ü|id|segera}}
+*{{tlh}}: {{Ü|tlh|nom}}
+*{{hr}}: {{Ü|hr|brz}}, {{Ü|hr|hitar}}
+*{{lb}}: {{Ü|lb|séier}}, {{Ü|lb|schnell}}
+*{{mk}}: {{Üt|mk|брз|brz}}, {{Üt|mk|итар|itar}}
+*{{no}}: {{Ü|no|fort}}, {{Ü|no|kjapp}}, {{Ü|no|rask}}
+*{{pl}}: {{Ü|pl|szybki}}
+*{{pt}}: {{Ü|pt|rápido}}
+*{{ro}}: {{Ü|ro|rapid}}
+*{{ru}}: {{Üt|ru|быстрый}}, {{Üt|ru|скорый}}
+*{{sa}}: {{Üt|sa|भृश|bhrza}}
+*{{sv}}: {{Ü|sv|flink}}, {{Ü|sv|fort}}, {{Ü|sv|hastig}}, {{Ü|sv|kvick}}, {{Ü|sv|rask}}, {{Ü|sv|snabb}}
+*{{sr}}: {{Üt|sr|брз|brz}}, {{Üt|sr|хитар|hitar}}
+*{{sh}}: {{Üt|sh|брз|brz}}, {{Üt|sh|хитар|hitar}}
+*{{sk}}: {{Ü|sk|rýchly}}
+*{{sl}}: {{Ü|sl|hiter}}
+*{{es}}: {{Ü|es|rápido}}
+*{{cs}}: {{Ü|cs|rychlý}}
+*{{tr}}: {{Ü|tr|seri}}, {{Ü|tr|tez}}
+*{{uk}}: {{Üt|uk|швидкий}}
+*{{hu}}: {{Ü|hu|gyorsan}}
+*{{wa}}: {{Ü|wa|rade}}, {{Ü|wa|vite}}, {{Ü?|wa|abeye}}
+*{{be}}: {{Üt|be|хуткі}}
+|Dialekttabelle=
+*{{bar}}: [?] gāch, trawig/drawig
+*[[Berlinerisch]]: [?] dalli
+*[[Elsässisch]]: [?] schnëll
+*[[Fränkisch]]: [?] fendzi
+*{{swg}}: [?] schleunig; dapferle
+*{{gsw}}: [?] gschwind; gleitig; hurtig
+*[[Vorarlbergerisch]]: [?] gnoot
+*[[Walserisch]]: [?] waile
+}}
+
+{{Ü-Tabelle|3|G=adverbielle Verwendung: wenig Zeit benötigend|Ü-Liste=
+*{{bs}}: {{Üt|bs|брзо|brzo}}, {{Üt|sr|хитро|hitro}}
+*{{en}}: {{Ü|en|just}}
+*{{fr}}: {{Ü|fr|vite}}
+*{{ka}}: {{Üt|ka|სწრაფი|stsraphi}}, {{Üt|ka|ჩქარი|chkari}}
+*{{ja}}: {{Üt|ja|早々|そうそう, sôsô}}
+*{{hr}}: {{Ü|hr|brzo}}, {{Ü|hr|hitro}}
+*{{mk}}: {{Üt|mk|брзо|brzo}}, {{Üt|mk|итро|itro}}
+*{{nds}}: 
+**{{pdt}}: {{Ü|pdt|schwind}}
+*{{no}}: {{Ü|no|fort}}, {{Ü|no|kjapp}}, {{Ü|no|rask}}
+*{{pl}}: {{Ü|pl|szybko}}
+*{{pt}}: {{Ü|pt|rápido}}
+*{{ro}}: {{Ü|ro|rapid}}
+*{{ru}}: {{Üt|ru|быстро}}
+*{{sv}}: {{Ü|sv|flinkt}}, {{Ü|sv|fort}}, {{Ü|sv|hastigt}}, {{Ü|sv|kvickt}}, {{Ü|sv|raskt}}, {{Ü|sv|snabbt}}
+*{{sr}}: {{Üt|sr|брзо|brzo}}, {{Üt|sr|хитро|hitro}}
+*{{sh}}: {{Üt|sh|брзо|brzo}}, {{Üt|sh|хитро|hitro}}
+*{{sk}}: {{Ü|sk|rýchly}}
+*{{sl}}: {{Ü|sl|hitro}}
+*{{es}}: {{Ü|es|rápido}}
+*{{cs}}: {{Ü|cs|rychlý}}
+*{{tr}}: {{Ü|tr|hızlı}}, {{Ü|tr|süratli}}, {{Ü|tr|çabuk}}
+*{{uk}}: {{Üt|uk|швидко}}
+*{{hu}}: {{Ü|hu|gyorsan}}
+*{{wa}}: {{Ü|wa|rade}}, {{Ü|wa|vite}}, {{Ü?|wa|abeye}}, {{Ü|wa|radmint}}, {{Ü|wa|raddimint}}, {{Ü|wa|vitmint}}
+|Dialekttabelle=
+*{{bar}}: [?] gāch, trawig/drawig
+*[[Berlinerisch]]: [?] dalli
+*[[Elsässisch]]: [?] schnëll
+*[[Fränkisch]]: [?] fendzi
+*{{swg}}: [?] schleunig; dapferle
+*{{gsw}}: [?] gschwind; gleitig; hurtig
+*[[Vorarlbergerisch]]: [?] gnoot
+*[[Walserisch]]: [?] waile
+}}
+
+{{Referenzen}}
+:[1, 2] {{Ref-Grimm}}
+:[1, 2] {{Ref-DWDS}}
+:[*] {{Ref-UniLeipzig}}
+:[1–3] {{Ref-FreeDictionary}}
+:[1, 2] {{Ref-Duden}}
+
+{{Quellen}}
+
+=== {{Wortart|Konjugierte Form|Deutsch}} ===
+
+{{Nebenformen}}
+:[[schnelle]]
+
+{{Worttrennung}}
+:schnell
+
+{{Aussprache}}
+:{{IPA}} {{Lautschrift|ʃnɛl}}
+:{{Hörbeispiele}} {{Audio|De-schnell.ogg}}, {{Audio|De-schnell2.ogg}}, {{Audio|De-at-schnell.ogg|spr=at}}
+:{{Reime}} {{Reim|ɛl|Deutsch}}
+
+{{Grammatische Merkmale}}
+* 2. Person Singular Imperativ Präsens Aktiv des Verbs '''[[schnellen]]'''
+
+{{Grundformverweis Konj|schnellen}}

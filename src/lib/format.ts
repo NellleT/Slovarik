@@ -25,6 +25,13 @@ export function formatDue(due: number, now: number): string {
   return u.inTime(formatDelay(dayStart(due) - today));
 }
 
+/** "just now", "5 min ago", "vor 2 Std." */
+export function formatAgo(time: number, now = Date.now()): string {
+  const diff = now - time;
+  if (diff < MINUTE) return t().sync.justNow;
+  return t().units.ago(formatDelay(diff));
+}
+
 export function formatDuration(ms: number): string {
   const u = t().units;
   const min = Math.round(ms / MINUTE);

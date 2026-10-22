@@ -32,6 +32,7 @@ Update with `brew upgrade --cask slovarik` or `scoop update slovarik`.
 - **Also included:** reverse cards (Russian → German), pronunciation with the system voice, stats, and light and dark themes.
 - **Interface language:** English, Deutsch or Русский — switch it in Settings.
 - **Your data stays on your computer**, in a single `slovarik.json` file with a daily backup next to it. Export and import as JSON or CSV.
+- **Optional sync between computers** through a secret gist on your GitHub. In Settings → Sync, create a token with the “gist” scope and paste it in. The app then syncs on start, after changes and every few minutes. Words, edits, reviews and deletions from every computer are merged. The token is kept in the system keychain, never in the synced file. A secret gist isn't listed on your profile, but anyone with its link can open it.
 
 ![Adding a word](docs/add-dark.png)
 

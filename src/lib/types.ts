@@ -38,8 +38,11 @@ export type Direction = 'fwd' | 'rev';
 export interface Card extends CardFields {
   id: string;
   created: number;
+  /** last edit of the text fields */
   updated: number;
   srs: { fwd: Srs; rev?: Srs };
+  /** last change of the review state (answer, undo, reset); decides which device wins on sync */
+  srsAt?: number;
 }
 
 export type Rating = 1 | 2 | 3 | 4;
@@ -63,6 +66,9 @@ export interface Db {
   cards: Card[];
   log: ReviewLog[];
   settings: Settings;
+  settingsAt: number;
+  /** card id -> when it was deleted, so sync doesn't bring it back */
+  deleted: Record<string, number>;
 }
 
 export const DEFAULT_SETTINGS: Settings = {

@@ -25,7 +25,7 @@
       }
     ],
     "security": {
-      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://de.wiktionary.org https://api.mymemory.translated.net"
+      "csp": "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; connect-src 'self' ipc: http://ipc.localhost https://de.wiktionary.org https://api.mymemory.translated.net https://api.github.com https://gist.githubusercontent.com"
     }
   },
   "bundle": {

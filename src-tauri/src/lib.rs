@@ -101,10 +101,79 @@ fn open_data_dir(app: AppHandle) -> Result<(), String> {
         .map_err(|e| e.to_string())
 }
 
+// The GitHub token for gist sync lives in the OS keychain (Keychain on macOS,
+// Credential Manager on Windows), never in the dictionary file that gets synced.
+const KEYCHAIN_SERVICE: &str = "io.slovarik.desktop";
+const KEYCHAIN_USER: &str = "github-gist-token";
+
+fn token_entry() -> Result<keyring::Entry, String> {
+    keyring::Entry::new(KEYCHAIN_SERVICE, KEYCHAIN_USER).map_err(|e| e.to_string())
+}
+
+#[tauri::command]
+fn token_get() -> Result<Option<String>, String> {
+    match token_entry()?.get_password() {
+        Ok(token) => Ok(Some(token)),
+        Err(keyring::Error::NoEntry) => Ok(None),
+        Err(e) => Err(e.to_string()),
+    }
+}
+
+#[tauri::command]
+fn token_set(token: String) -> Result<(), String> {
+    token_entry()?.set_password(token.trim()).map_err(|e| e.to_string())
+}
+
+#[tauri::command]
+fn token_clear() -> Result<(), String> {
+    match token_entry()?.delete_credential() {
+        Ok(()) | Err(keyring::Error::NoEntry) => Ok(()),
+        Err(e) => Err(e.to_string()),
+    }
+}
+
+/// Opens GitHub's "new token" page with the gist scope preselected.
+#[tauri::command]
+fn open_token_page() -> Result<(), String> {
+    const URL: &str = "https://github.com/settings/tokens/new?scopes=gist&description=Slovarik%20sync";
+    // explorer.exe treats a URL with a query string as a path and opens Documents
+    // instead; the URL protocol handler hands it to the default browser.
+    #[cfg(target_os = "windows")]
+    let mut cmd = {
+        let mut c = std::process::Command::new("rundll32");
+        c.args(["url.dll,FileProtocolHandler", URL]);
+        c
+    };
+    #[cfg(target_os = "macos")]
+    let mut cmd = {
+        let mut c = std::process::Command::new("open");
+        c.arg(URL);
+        c
+    };
+    #[cfg(all(unix, not(target_os = "macos")))]
+    let mut cmd = {
+        let mut c = std::process::Command::new("xdg-open");
+        c.arg(URL);
+        c
+    };
+    cmd.spawn()
+        .map(|_| ())
+        .map_err(|e| e.to_string())
+}
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![load_data, save_data, export_file, open_data_dir])
+        .invoke_handler(tauri::generate_handler![
+            load_data,
+            save_data,
+            export_file,
+            open_data_dir,
+            token_get,
+            token_set,
+            token_clear,
+            open_token_page
+        ])
         .run(tauri::generate_context!())
         .expect("error while running Slovarik");
 }

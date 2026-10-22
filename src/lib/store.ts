@@ -1,6 +1,7 @@
 import { useSyncExternalStore } from 'react';
 import { newSrs, schedule, seedFor } from './fsrs';
 import { setLanguage } from './i18n';
+import { repairMojibake } from './mojibake';
 import type { QueueItem } from './queue';
 import { loadRaw, saveRaw } from './storage';
 import {
@@ -14,8 +15,9 @@ import {
   type Settings,
 } from './types';
 
-let db: Db = { version: 1, cards: [], log: [], settings: { ...DEFAULT_SETTINGS } };
+let db: Db = { version: 1, cards: [], log: [], settings: { ...DEFAULT_SETTINGS }, settingsAt: 0, deleted: {} };
 const listeners = new Set<() => void>();
+const changeListeners = new Set<() => void>();
 
 function emit() {
   for (const l of listeners) l();
@@ -26,11 +28,23 @@ function subscribe(l: () => void) {
   return () => listeners.delete(l);
 }
 
-function commit(next: Db) {
+function commit(next: Db, fromSync = false) {
   db = next;
   setLanguage(db.settings.lang);
   emit();
   saveRaw(JSON.stringify(db));
+  if (!fromSync) for (const l of changeListeners) l();
+}
+
+/** Called after every change made on this device (not the ones that came from sync). */
+export function onLocalChange(l: () => void) {
+  changeListeners.add(l);
+  return () => changeListeners.delete(l);
+}
+
+/** Replaces the database with a merged copy from sync. */
+export function applySynced(next: Db) {
+  commit(next, true);
 }
 
 export function useDb(): Db {
@@ -46,12 +60,16 @@ export async function initStore(): Promise<void> {
   emit();
 }
 
-function normalizeDb(x: any): Db {
+export function normalizeDb(x: any): Db {
+  const deleted: Record<string, number> = {};
+  for (const [id, t] of Object.entries(x?.deleted ?? {})) if (Number(t)) deleted[id] = Number(t);
   return {
     version: 1,
     cards: Array.isArray(x?.cards) ? x.cards.map((c: any) => normalizeCard(c)) : [],
-    log: Array.isArray(x?.log) ? x.log : [],
+    log: Array.isArray(x?.log) ? x.log.filter((l: unknown) => Array.isArray(l) && l.length >= 5) : [],
     settings: { ...DEFAULT_SETTINGS, ...(x?.settings ?? {}) },
+    settingsAt: Number(x?.settingsAt) || 0,
+    deleted,
   };
 }
 
@@ -72,14 +90,17 @@ function normalizeCard(c: any, now = Date.now()): Card {
   const fields = { ...EMPTY_FIELDS };
   for (const k of Object.keys(EMPTY_FIELDS) as (keyof CardFields)[]) {
     if (k === 'article') fields.article = c?.article === 'der' || c?.article === 'die' || c?.article === 'das' ? c.article : null;
-    else if (typeof c?.[k] === 'string') fields[k] = c[k];
+    else if (typeof c?.[k] === 'string') fields[k] = k === 'en' || k === 'ru' ? repairMojibake(c[k]) : c[k];
   }
+  const created = Number(c?.created) || now;
+  const srs = c?.srs?.fwd ? c.srs : { fwd: newSrs(now) };
   return {
     ...fields,
     id: typeof c?.id === 'string' ? c.id : makeId(),
-    created: Number(c?.created) || now,
+    created,
     updated: Number(c?.updated) || now,
-    srs: c?.srs?.fwd ? c.srs : { fwd: newSrs(now) },
+    srs,
+    srsAt: Number(c?.srsAt) || Math.max(srs.fwd.last ?? 0, srs.rev?.last ?? 0, created),
   };
 }
 
@@ -101,7 +122,7 @@ export function findDuplicate(word: string, exceptId?: string): Card | undefined
 
 export function addCard(fields: CardFields): Card {
   const now = Date.now();
-  const card: Card = { ...trimFields(fields), id: makeId(), created: now, updated: now, srs: { fwd: newSrs(now) } };
+  const card: Card = { ...trimFields(fields), id: makeId(), created: now, updated: now, srs: { fwd: newSrs(now) }, srsAt: now };
   commit({ ...db, cards: [...db.cards, card] });
   return card;
 }
@@ -114,6 +135,7 @@ export function addCards(list: CardFields[]): number {
     created: now + i,
     updated: now + i,
     srs: { fwd: newSrs(now + i) },
+    srsAt: now + i,
   }));
   commit({ ...db, cards: [...db.cards, ...cards] });
   return cards.length;
@@ -137,25 +159,28 @@ export function updateCard(id: string, fields: Partial<CardFields>) {
 
 export function deleteCard(id: string): Card | undefined {
   const card = db.cards.find((c) => c.id === id);
-  commit({ ...db, cards: db.cards.filter((c) => c.id !== id) });
+  commit({ ...db, cards: db.cards.filter((c) => c.id !== id), deleted: { ...db.deleted, [id]: Date.now() } });
   return card;
 }
 
 export function restoreCard(card: Card) {
   if (db.cards.some((c) => c.id === card.id)) return;
-  const cards = [...db.cards, card].sort((a, b) => a.created - b.created);
-  commit({ ...db, cards });
+  // A newer edit time than the deletion keeps the card alive on other devices too.
+  const cards = [...db.cards, { ...card, updated: Date.now() }].sort((a, b) => a.created - b.created);
+  const { [card.id]: _, ...deleted } = db.deleted;
+  commit({ ...db, cards, deleted });
 }
 
 export function resetCard(id: string) {
   const now = Date.now();
-  commit({ ...db, cards: db.cards.map((c) => (c.id === id ? { ...c, srs: { fwd: newSrs(now) } } : c)) });
+  commit({ ...db, cards: db.cards.map((c) => (c.id === id ? { ...c, srs: { fwd: newSrs(now) }, srsAt: now } : c)) });
 }
 
 interface UndoEntry {
   card: Card;
   dir: Direction;
-  logLength: number;
+  /** time of the log entry the answer added */
+  at: number;
 }
 const undoStack: UndoEntry[] = [];
 
@@ -165,8 +190,8 @@ export function answer(item: QueueItem, rating: Rating, msSpent: number) {
   if (!card) return;
   const prev = item.srs;
   const next = schedule(prev, rating, now, db.settings.retention, seedFor(card.id, item.dir, prev.reps));
-  const updated: Card = { ...card, srs: { ...card.srs, [item.dir]: next } };
-  undoStack.push({ card, dir: item.dir, logLength: db.log.length });
+  const updated: Card = { ...card, srs: { ...card.srs, [item.dir]: next }, srsAt: now };
+  undoStack.push({ card, dir: item.dir, at: now });
   if (undoStack.length > 20) undoStack.shift();
   commit({
     ...db,
@@ -183,14 +208,14 @@ export function undoAnswer(): { id: string; dir: Direction } | null {
   if (!u) return null;
   commit({
     ...db,
-    cards: db.cards.map((c) => (c.id === u.card.id ? { ...c, srs: u.card.srs } : c)),
-    log: db.log.slice(0, u.logLength),
+    cards: db.cards.map((c) => (c.id === u.card.id ? { ...c, srs: u.card.srs, srsAt: Date.now() } : c)),
+    log: db.log.filter((l) => !(l[0] === u.at && l[1] === u.card.id)),
   });
   return { id: u.card.id, dir: u.dir };
 }
 
 export function updateSettings(patch: Partial<Settings>) {
-  commit({ ...db, settings: { ...db.settings, ...patch } });
+  commit({ ...db, settings: { ...db.settings, ...patch }, settingsAt: Date.now() });
 }
 
 export function exportJson(): string {

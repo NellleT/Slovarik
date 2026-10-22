@@ -1837,3 +1837,78 @@ main {
   outline-offset: -10px;
   border-radius: 14px;
 }
+
+/* ——— Sync ——— */
+
+.sync-btn {
+  position: relative;
+}
+
+.sync-btn.syncing svg {
+  animation: spin 1s linear infinite;
+}
+
+.sync-dot {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--again);
+}
+
+.sync-text {
+  margin: 6px 0;
+  color: var(--ink-2);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
+
+.sync-connect {
+  display: flex;
+  gap: 8px;
+  margin: 12px 0 8px;
+}
+
+.text-input {
+  flex: 1;
+  min-width: 0;
+  height: 38px;
+  padding: 0 12px;
+  border: 1px solid var(--rule-strong);
+  border-radius: 10px;
+  background: var(--surface);
+  outline: none;
+}
+
+.text-input:focus {
+  border-color: var(--ink-2);
+}
+
+.sync-error {
+  margin: 4px 0;
+  color: var(--again);
+  font-size: 13px;
+}
+
+.hint.sync-error {
+  margin: 0;
+}
+
+.sync-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.link {
+  color: var(--ink);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.sync-note {
+  color: var(--ink-3);
+  font-size: 12.5px;
+}

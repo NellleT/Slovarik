@@ -2,6 +2,7 @@ import { useEffect, useMemo } from 'react';
 import { EditSheet } from './components/EditSheet';
 import { Icon } from './components/Icon';
 import { SettingsDialog } from './components/SettingsDialog';
+import { SyncIndicator } from './components/Sync';
 import { t } from './lib/i18n';
 import { counts, buildQueue } from './lib/queue';
 import { useDb } from './lib/store';
@@ -70,6 +71,7 @@ export function App() {
           ))}
         </nav>
         <div className="topbar-end">
+          <SyncIndicator />
           <button className="icon-btn" onClick={() => openSettings(true)} title={L.nav.settings} aria-label={L.nav.settings}>
             <Icon name="sliders" />
           </button>

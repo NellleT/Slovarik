@@ -10,18 +10,21 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { t } from './lib/i18n';
 import { initStore } from './lib/store';
 import { isDesktop, openDataDir } from './lib/storage';
+import { initSync } from './lib/sync';
 
 const root = createRoot(document.getElementById('root')!);
 
 initStore().then(
-  () =>
+  () => {
+    void initSync();
     root.render(
       <StrictMode>
         <ErrorBoundary>
           <App />
         </ErrorBoundary>
       </StrictMode>,
-    ),
+    );
+  },
   // Never start with an empty dictionary on top of a file we failed to read:
   // the first save would overwrite it.
   (e) =>

@@ -1,5 +1,6 @@
 import { parsePage, type Article, type Entry } from './wikitext';
 import { t } from './i18n';
+import { looksGarbled, repairMojibake } from './mojibake';
 import type { CardFields } from './types';
 
 const WIKI_API = 'https://de.wiktionary.org/w/api.php';
@@ -142,8 +143,8 @@ async function machineTranslate(word: string, to: 'en' | 'ru'): Promise<string> 
   try {
     const params = new URLSearchParams({ q: word, langpair: `de|${to}` });
     const data = await getJson(`${MT_API}?${params}`);
-    const text: string = data?.responseData?.translatedText ?? '';
-    if (!text || /MYMEMORY WARNING|INVALID/i.test(text)) return '';
+    const text = repairMojibake(String(data?.responseData?.translatedText ?? ''));
+    if (!text || /MYMEMORY WARNING|INVALID/i.test(text) || looksGarbled(text)) return '';
     // MyMemory echoes the input when it has nothing.
     if (text.trim().toLowerCase() === word.toLowerCase()) return '';
     return text.trim();

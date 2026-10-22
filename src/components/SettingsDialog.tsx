@@ -6,6 +6,7 @@ import { exportFile, isDesktop, openDataDir } from '../lib/storage';
 import type { Settings } from '../lib/types';
 import { openSettings, toast } from '../lib/ui';
 import { Icon } from './Icon';
+import { SyncSection } from './Sync';
 
 function Stepper({ value, min, max, step, onChange }: { value: number; min: number; max: number; step: number; onChange: (v: number) => void }) {
   const clamp = (v: number) => Math.min(max, Math.max(min, Math.round(v)));
@@ -179,6 +180,8 @@ export function SettingsDialog() {
               </div>
             </div>
           </section>
+
+          <SyncSection />
 
           <section>
             <h3 className="eyebrow">{L.data}</h3>
